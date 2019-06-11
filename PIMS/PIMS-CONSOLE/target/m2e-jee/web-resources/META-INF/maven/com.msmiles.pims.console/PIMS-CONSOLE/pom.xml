@@ -3,7 +3,7 @@
   <parent>
     <artifactId>PIMS</artifactId>
     <groupId>com.msmiles.pims</groupId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${project.version}</version>
     <relativePath>..</relativePath>
   </parent>
   <groupId>com.msmiles.pims.console</groupId>
@@ -11,13 +11,25 @@
   <packaging>war</packaging>
   <name>PIMS-CONSOLE</name>
   <description>CONSOLE的Maven子工程</description>
+  <dependencies>  
+     <dependency>  
+         <groupId>com.msmiles.pims.common</groupId>  
+         <artifactId>PIMS-COMMON</artifactId>  
+         <version>${project.version}</version>  
+     </dependency>
+     <dependency>  
+         <groupId>com.msmiles.pims.iam</groupId>  
+         <artifactId>PIMS-IAM</artifactId>  
+         <version>${project.version}</version>  
+     </dependency>
+  </dependencies>  
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
         </configuration>
       </plugin>
     </plugins>

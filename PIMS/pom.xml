@@ -2,18 +2,23 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.msmiles.pims</groupId>
   <artifactId>PIMS</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>${project.version}</version>
   <packaging>pom</packaging>
   <name>PIMS</name>
   <description>PIMS框架Maven工程</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.version>0.0.1-SNAPSHOT</project.version>
+    <jdk.version>1.8</jdk.version>
+  </properties>
   
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>${jdk.version}</source>
+          <target>${jdk.version}</target>
         </configuration>
       </plugin>
       <!-- 配置web.xml文件的配置 -->
@@ -35,6 +40,7 @@
   <modules>
     <module>PIMS-IAM</module>
     <module>PIMS-CONSOLE</module>
+    <module>PIMS-COMMON</module>
   </modules>
   <dependencies>
     <dependency>
@@ -42,5 +48,41 @@
       <artifactId>geronimo-servlet_2.4_spec</artifactId>
       <version>1.1.1</version>
     </dependency>
+  <!-- spring3 -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-expression</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>3.1.2.RELEASE</version>
+	</dependency>
   </dependencies>
 </project>

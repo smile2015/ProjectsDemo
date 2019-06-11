@@ -12,3 +12,10 @@
 5、MySQL 6
 
 https://blog.csdn.net/mwb2001/article/details/91421525
+
+
+添加spring依赖
+PIMS
+  ---PIMS-COMMON
+  ---PIMS-IAM
+  ---PIMS-CONSOLE

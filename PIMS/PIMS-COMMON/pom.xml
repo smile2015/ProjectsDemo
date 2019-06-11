@@ -6,23 +6,10 @@
     <version>${project.version}</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.msmiles.pims.console</groupId>
-  <artifactId>PIMS-CONSOLE</artifactId>
-  <packaging>war</packaging>
-  <name>PIMS-CONSOLE</name>
-  <description>CONSOLE的Maven子工程</description>
-  <dependencies>  
-     <dependency>  
-         <groupId>com.msmiles.pims.common</groupId>  
-         <artifactId>PIMS-COMMON</artifactId>  
-         <version>${project.version}</version>  
-     </dependency>
-     <dependency>  
-         <groupId>com.msmiles.pims.iam</groupId>  
-         <artifactId>PIMS-IAM</artifactId>  
-         <version>${project.version}</version>  
-     </dependency>
-  </dependencies>  
+  <groupId>com.msmiles.pims.common</groupId>
+  <artifactId>PIMS-COMMON</artifactId>
+  <name>PIMS-COMMON</name>
+  <description>COMMON公共Maven工程</description>
   <build>
     <plugins>
       <plugin>

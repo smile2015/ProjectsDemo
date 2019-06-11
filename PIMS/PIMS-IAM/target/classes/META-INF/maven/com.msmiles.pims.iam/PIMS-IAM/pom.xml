@@ -9,14 +9,14 @@
   <groupId>com.msmiles.pims.iam</groupId>
   <artifactId>PIMS-IAM</artifactId>
   <name>PIMS-IAM</name>
-  <description>IAM子Maven工程</description>
+  <description>IAM的Maven子工程</description>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
     </plugins>

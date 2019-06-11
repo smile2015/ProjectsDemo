@@ -3,21 +3,44 @@
   <groupId>com.msmiles.pims</groupId>
   <artifactId>PIMS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
   <name>PIMS</name>
   <description>PIMS框架Maven工程</description>
+  
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
+      <!-- 配置web.xml文件的配置 -->
+     <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>2.2</version>
+          <!-- Maven默认会去src\main\webapp下去找web.xml -->
+          <!--<configuration>-->
+             <!-- 指定web.xml的路径  -->
+            <!-- <webXml>src\main\webapp\WEB-INF\web.xml</webXml>-->
+             <!-- 指定jsp、js、css的路劲 --> 
+          <!--   <warSourceDirectory>WebRoot</warSourceDirectory>
+          </configuration>-->
+       </plugin>
     </plugins>
   </build>
-  <packaging>pom</packaging>
+  
   <modules>
-  	<module>PIMS-IAM</module>
+    <module>PIMS-IAM</module>
+    <module>PIMS-CONSOLE</module>
   </modules>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-servlet_2.4_spec</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+  </dependencies>
 </project>

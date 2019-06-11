@@ -6,10 +6,11 @@
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>..</relativePath>
   </parent>
-  <groupId>com.msmiles.pims.iam</groupId>
-  <artifactId>PIMS-IAM</artifactId>
-  <name>PIMS-IAM</name>
-  <description>IAM的Maven子工程</description>
+  <groupId>com.msmiles.pims.console</groupId>
+  <artifactId>PIMS-CONSOLE</artifactId>
+  <packaging>war</packaging>
+  <name>PIMS-CONSOLE</name>
+  <description>CONSOLE的Maven子工程</description>
   <build>
     <plugins>
       <plugin>
